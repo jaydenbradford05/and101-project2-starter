@@ -20,15 +20,15 @@ class RandomColorActivity : AppCompatActivity() {
     }
 
     private fun getRandomColor(): Int {
-        // Get random color// Get random color// Get random color// Get random color
-        getRandomColor()
+    // Get random color// Get random color// Get random color// Get random color
+    getRandomColor()  // ❌ recursive call
 
-        val rnd = Random()
-        return Color.argb(
-            255,
-            rnd.nextInt(256),
-            rnd.nextInt(256),
-            rnd.nextInt(256)
-        )
-    }
+    val rnd = Random()
+    return Color.argb(
+        255,
+        rnd.nextInt(256),
+        rnd.nextInt(256),
+        rnd.nextInt(256)
+    )
+}
 }
